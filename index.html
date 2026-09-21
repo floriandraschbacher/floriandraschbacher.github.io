@@ -130,7 +130,7 @@ layout: default
       <article class="entry entry--{{ entry.type }}">
         <h3 class="entry__title">
           {% if entry.type == 'cve' %}<i class="fa-solid fa-bolt" style="color:var(--muted)"></i> {% else %}<i class="fa-solid fa-trophy" style="color:var(--muted)"></i> {% endif %}
-          {% if entry.url %}<a href="{{ entry.url }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}
+          {% if entry.link %}<a href="{{ entry.link }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}
         </h3>
         {% if entry.subtitle %}<p class="entry__meta">{{ entry.subtitle }}</p>{% endif %}
         {% if entry.advisory or entry.cvss %}

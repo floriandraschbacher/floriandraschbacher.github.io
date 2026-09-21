@@ -66,7 +66,7 @@ key: cve-2025-12345
 type: cve                      # "cve" or "award"
 title: "CVE-2025-12345"
 date: 2025-12-08
-url: https://nvd.nist.gov/vuln/detail/CVE-2025-12345   # title link
+link: https://nvd.nist.gov/vuln/detail/CVE-2025-12345   # title link (do NOT name this `url` — reserved by Jekyll)
 advisory: https://...          # optional (cve)
 cvss: "8.8"                    # optional
 cvss_version: "3.1"            # optional (defaults to 3.1)
