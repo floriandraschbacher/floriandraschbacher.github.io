@@ -1,0 +1,36 @@
+# Site
+title: Florian Draschbacher
+name: Florian Draschbacher
+description: >-
+  Mobile security researcher from Graz, Austria. Research on mobile application
+  security, platform security, supply chain security and connectivity protocols.
+url: "https://floriandraschbacher.com"
+baseurl: ""
+lang: en
+
+# Google Search Console verification
+google_site_verification: aKZv49ezVC2Sd3llK7buNWMTw6kKldoc0QCZ2L1huuk
+
+# Build
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+# Collections (academicpages-style; rendered inline on the single page,
+# so individual pages are not generated).
+collections:
+  publications:
+    output: false
+  talks:
+    output: false
+  awards:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .sass-cache
+  - .jekyll-cache
