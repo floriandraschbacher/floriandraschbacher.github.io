@@ -211,7 +211,10 @@ section { scroll-margin-top: 0; }
 
 @media (max-width: 640px) {
   .about__grid { grid-template-columns: 1fr; gap: 1.25rem; text-align: left; }
-  .about__photo { width: 120px; height: 120px; }
+  /* Center the researcher identity (photo, contact buttons, name, role) on phones */
+  .about__photo { width: 120px; height: 120px; display: block; margin: 0 auto; }
+  .about__social { justify-content: center; }
+  .about__name, .about__role { text-align: center; }
   .about__cols { grid-template-columns: 1fr; }
 }
 
