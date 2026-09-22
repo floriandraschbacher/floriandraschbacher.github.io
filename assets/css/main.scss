@@ -241,6 +241,8 @@ section { scroll-margin-top: 0; }
 .badge i { margin-right: 0.25rem; }
 .badge--ok i { color: var(--green); }
 .badge--cve i { color: var(--text); }
+.badge--award { color: var(--text); font-weight: 600; }
+.badge--award i { color: #f59e0b; }
 
 /* Action buttons */
 .actions { margin-top: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.7rem; }
@@ -248,8 +250,10 @@ section { scroll-margin-top: 0; }
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  font-family: inherit;
   font-size: 0.82rem;
   font-weight: 500;
+  line-height: 1;
   padding: 0.28rem 0.62rem;
   border-radius: 7px;
   border: 1px solid var(--border);
@@ -285,6 +289,15 @@ section { scroll-margin-top: 0; }
 
 /* CVE / award compact rows */
 .entry--cve .entry__title { font-size: 1rem; font-family: ui-monospace, Menlo, monospace; }
+/* Fixed rem-based icon box + gap so award (trophy) and CVE (bolt) titles start
+   at the same offset regardless of the icon's glyph width or the title font. */
+.entry__title i {
+  display: inline-block;
+  width: 1.1rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  color: var(--muted);
+}
 .cvss {
   color: var(--muted);
   font-size: 0.85rem;

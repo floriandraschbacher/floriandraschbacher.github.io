@@ -72,8 +72,9 @@ layout: default
         <p class="entry__meta">{{ entry.authors }}</p>
         <p class="entry__meta"><span class="entry__venue">{{ entry.venue }}</span> {{ grp.name }}</p>
 
-        {% if entry.artifacts or entry.cves %}
+        {% if entry.award or entry.artifacts or entry.cves %}
         <div class="badges">
+          {% if entry.award %}<span class="badge badge--award"><i class="fa-solid fa-trophy"></i>{{ entry.award }}</span>{% endif %}
           {% if entry.artifacts %}<span class="badge badge--ok"><i class="fa-solid fa-circle-check"></i>Artifacts evaluated: {{ entry.artifacts }}</span>{% endif %}
           {% if entry.cves %}<span class="badge badge--cve"><i class="fa-solid fa-bug"></i>{{ entry.cves }}</span>{% endif %}
         </div>
@@ -129,8 +130,8 @@ layout: default
     {% for entry in grp.items %}
       <article class="entry entry--{{ entry.type }}">
         <h3 class="entry__title">
-          {% if entry.type == 'cve' %}<i class="fa-solid fa-bolt" style="color:var(--muted)"></i> {% else %}<i class="fa-solid fa-trophy" style="color:var(--muted)"></i> {% endif %}
-          {% if entry.link %}<a href="{{ entry.link }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}
+          {%- if entry.type == 'cve' -%}<i class="fa-solid fa-bolt"></i>{%- else -%}<i class="fa-solid fa-trophy"></i>{%- endif -%}
+          {%- if entry.link -%}<a href="{{ entry.link }}">{{ entry.title }}</a>{%- else -%}{{ entry.title }}{%- endif -%}
         </h3>
         {% if entry.subtitle %}<p class="entry__meta">{{ entry.subtitle }}</p>{% endif %}
         {% if entry.advisory or entry.cvss %}

@@ -7,6 +7,7 @@ date: 2025-08-14
 paperurl: papers/usenix25-choicejacking.pdf
 artifacts: "Available"
 cves: "CVE-2024-20900, CVE-2024-43085, CVE-2025-24193, CVE-2024-54096"
+awards: "Nomination, Best Mobile Bug, Pwnie Awards 2026"
 links:
   - label: Zenodo
     icon: fa-solid fa-box-archive

@@ -29,6 +29,7 @@ authors: 'A. Other, <span class="self">Florian Draschbacher</span>, C. Third'
 venue: "USENIX Security Symposium"
 date: 2025-08-14               # controls year + ordering
 paperurl: papers/mypaper.pdf   # optional — makes the title a link
+award: "Best Paper Award"     # optional trophy badge
 artifacts: "Available, Functional, Reproduced"   # optional badge
 cves: "CVE-2025-12345"        # optional badge
 links:                         # optional extra buttons

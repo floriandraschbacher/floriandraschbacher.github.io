@@ -4,6 +4,7 @@ title: "ChoiceJacking: Compromising Mobile Devices through Malicious Chargers li
 authors: '<span class="self">Florian Draschbacher</span>'
 venue: "USENIX Security 2025"
 date: 2025-09-03
+slidesurl: slides/usenix25-choicejacking.pdf
 links:
   - label: Website
     icon: fa-solid fa-globe
