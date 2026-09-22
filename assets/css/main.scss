@@ -289,15 +289,6 @@ section { scroll-margin-top: 0; }
 
 /* CVE / award compact rows */
 .entry--cve .entry__title { font-size: 1rem; font-family: ui-monospace, Menlo, monospace; }
-/* Fixed rem-based icon box + gap so award (trophy) and CVE (bolt) titles start
-   at the same offset regardless of the icon's glyph width or the title font. */
-.entry__title i {
-  display: inline-block;
-  width: 1.1rem;
-  margin-right: 0.5rem;
-  text-align: center;
-  color: var(--muted);
-}
 .cvss {
   color: var(--muted);
   font-size: 0.85rem;
